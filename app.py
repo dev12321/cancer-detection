@@ -78,8 +78,8 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            testres = predict_image_class(UPLOAD_FOLDER+filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'],'/', filename))
+            testres = predict_image_class(UPLOAD_FOLDER+'/'+filename)
             print(testres)
             return jsonify(testres)
     else:
