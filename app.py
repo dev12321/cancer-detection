@@ -82,10 +82,8 @@ def upload_file():
             testres = predict_image_class(UPLOAD_FOLDER+filename)
             print(testres)
             return jsonify(testres)
-            
-@app.route('/')
-def index():
-    return "<h1>Welcome to our server !!</h1>"
+    else:
+        return "<h1>Welcome to our server !!</h1>"
 
 if __name__ == '__main__':
    app.run()
