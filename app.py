@@ -5,7 +5,7 @@ from try_retrain import predict_image_class
 from bs4 import BeautifulSoup
 import requests
 
-UPLOAD_FOLDER = 'D:/'
+UPLOAD_FOLDER = os.getcwd()
 ALLOWED_EXTENSIONS = set([ 'png', 'jpg', 'jpeg'])
 
 app = Flask(__name__)
