@@ -1152,7 +1152,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--output_graph',
       type=str,
-      default='C:/Users/91943/Desktop/new/output_graph.pb',
+      default='~/flaskapp/output_graph.pb',
       help='Where to save the trained graph.'
   )
   parser.add_argument(
@@ -1173,7 +1173,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--output_labels',
       type=str,
-      default='/tmp/output_labels.txt',
+      default='~/flaskapp/output_labels.txt',
       help='Where to save the trained graph\'s labels.'
   )
   parser.add_argument(
